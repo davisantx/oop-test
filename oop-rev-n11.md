@@ -64,11 +64,11 @@ Para possibilitar a criação de objetos do tipo Aluno e permitir a inserção d
     - Para **criar** o método **construtor** de **Aluno**:
       ```python
       class Aluno:
-        def __init__(self, nome: str, idade: int, curso: str, semestre: int):
-            self.nome = nome
-            self.idade = idade
-            self.curso = curso
-            self.semestre = semestre
+          def __init__(self, nome: str, idade: int, curso: str, semestre: int):
+              self.nome = nome
+              self.idade = idade
+              self.curso = curso
+              self.semestre = semestre
         ```
 
 3. Atente-se ao **self**
@@ -97,16 +97,16 @@ Exemplos de ações que podem ser atribuidas aos objetos **Aluno**:
           self.carga_horaria_em_horas = carga_horaria_em_horas
     
   class Aluno:
-    def __init__(self, nome: str, idade: int, curso: str, semestre: int, disciplinas: list[Disciplina]):
-        self.nome = nome
-        self.idade = idade
-        self.curso = curso
-        self.semestre = semestre
-        self.disciplinas = disciplinas
+      def __init__(self, nome: str, idade: int, curso: str, semestre: int, disciplinas: list[Disciplina]):
+          self.nome = nome
+          self.idade = idade
+          self.curso = curso
+          self.semestre = semestre
+          self.disciplinas = disciplinas
 
-    def passar_de_semestre(self, novas_disciplinas: list[Disciplina]):
-        self.semestre += 1
-        self.disciplinas = novas_disciplinas
+      def passar_de_semestre(self, novas_disciplinas: list[Disciplina]):
+          self.semestre += 1
+          self.disciplinas = novas_disciplinas
   ```
 
     Observe como seria criar objetos **Aluno** nesse contexto (pseudo-hipotético):
