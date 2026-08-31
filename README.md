@@ -6,4 +6,4 @@ Linguagem usada: Python
 
 ## Conteúdo:
 
-- [Revisão dos conceitos abordados em Programação Orientada a Objetos na N1.1](oop-rev-n11)
+- [Revisão dos conceitos abordados em Programação Orientada a Objetos na N1.1](./oop-rev-n11.md)
