@@ -28,7 +28,7 @@ Poderia definir como algo concreto. Um exemplo real de algo, que possui seus pr�
 
 Quais seriam possíveis exemplos?
 
-##### Do tipo **Aluno**:
+##### Do tipo ```Aluno```:
 
 ```python
 davi = Aluno("Davi", 20, "ads", 2)
@@ -39,29 +39,29 @@ lucas = Aluno("Lucas", 19, "ads", 2)
 
 <br>
 
-Note a sequência de atributos inseridos ao criar os Objetos do tipo Aluno:
+Note a sequência de atributos inseridos ao criar os Objetos do tipo ```Aluno```:
 
 - nome: str
 - idade: int
 - curso: str
 - semestre: int
 
-Para possibilitar a criação de objetos do tipo Aluno e permitir a inserção desses dados na criação de cada objeto:
+Para possibilitar a criação de objetos do tipo ```Aluno``` e permitir a inserção desses dados na criação de cada objeto:
 
-1. Crie a classe **Aluno**:
+1. Crie a classe ```Aluno```:
     ```python
     class Aluno:
         pass
     ```
 
-2. Crie o método **construtor** de **Aluno**
-    - Métodos são ações comportamentos atribuídos a cada objeto de uma classe.
+2. Crie o método **construtor** de ```Aluno```
+    - Métodos são ações, comportamentos atribuídos a cada objeto de uma classe.
     - Métodos se assemelham a funções.
     - O método construtor, em específico, é um método padrão da classe que pode receber dados pelos seus parâmetros, permitindo a inserção de dados no objeto já no momento de sua criação, como em:
 
       - Aluno("Lucas", 19, "ads", 2)
 
-    - Para **criar** o método **construtor** de **Aluno**:
+    - Para **criar** o método **construtor** de ```Aluno```:
       ```python
       class Aluno:
           def __init__(self, nome: str, idade: int, curso: str, semestre: int):
@@ -73,8 +73,8 @@ Para possibilitar a criação de objetos do tipo Aluno e permitir a inserção d
 
 3. Atente-se ao **self**
 
-    - O **self** se refere ao objeto que está sendo ou foi criado.
-    - Ou seja, o **self** é utilizado pra **se referir aos atributos** e **métodos** dos **objetos** que serão **gerados a partir da classe**. 
+    - O ```self``` se refere ao objeto que está sendo ou foi criado.
+    - Ou seja, o ```self``` é utilizado pra **se referir aos atributos** e **métodos** dos **objetos** que serão **gerados a partir da classe**. 
 
 ##### **Lembrete**:
 Lembre sempre que o **objeto** pode ser entendido como:
@@ -85,9 +85,9 @@ Lembre sempre que o **objeto** pode ser entendido como:
 - **Instância**:
   - "Instância da classe X"
 
-Exemplos de ações que podem ser atribuidas aos objetos **Aluno**:
+Exemplos de ações que podem ser atribuidas aos objetos ```Aluno```:
 
-- passar_de_semestre()
+- ```passar_de_semestre()```
 
   ```python
 
@@ -136,7 +136,7 @@ Exemplos de ações que podem ser atribuidas aos objetos **Aluno**:
     )
     ```
 
-E se fosse pra imprimir todos os dados atrelados a cada objeto de **Aluno** de modo formatado?
+E se fosse pra imprimir todos os dados atrelados a cada objeto de ```Aluno``` de modo formatado?
 
   ```python
   class Aluno:
