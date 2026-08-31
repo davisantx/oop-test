@@ -5,10 +5,21 @@ class Disciplina:
 
 class Aluno:
     QUANTIDADE_ALUNOS = 0
+
+    @property
+    def idade(self) -> int:
+        return self.__idade
     
+    @idade.setter
+    def idade(self, idade: int):
+        if idade <= 0:
+            raise ValueError("Idade inválida!")
+    
+        self.__idade = idade
+        
     def __init__(self, nome: str, idade: int, curso: str, semestre: int, disciplinas: list[Disciplina]):
         self.__nome = nome
-        self.__idade = idade
+        self.idade = idade
         self.__curso = curso
         self.__semestre = semestre
         self.__disciplinas = disciplinas
@@ -38,16 +49,7 @@ class Aluno:
         str += f"  Disciplinas: {self.exibir_disciplinas()}\n"
         return str
 
-    @property
-    def idade(self) -> int:
-        return self.__idade
     
-    @idade.setter
-    def idade(self, idade: int):
-        if idade <= 0:
-            raise ValueError("Idade inválida!")
-    
-        self.__idade = idade
 
 davi = Aluno(
     nome="Davi",
@@ -72,13 +74,25 @@ zaino = Aluno(
     ]
 )
 
+paulo = Aluno(
+    nome="Paulo",
+    idade=21,
+    curso="fisica",
+    semestre=4,
+    disciplinas=[
+        Disciplina("Calculo 3", 80)
+    ]
+)
+
 print(davi)
 print(zaino)
+print(paulo)
 
 # Supondo um aniversário
-
 zaino.idade = zaino.idade + 1
 davi.idade = davi.idade + 1
 
 print(f"Nova idade de Zaino: {zaino.idade}")
 print(f"Nova idade de Davi: {davi.idade}")
+
+
