@@ -140,39 +140,39 @@ E se fosse pra imprimir todos os dados atrelados a cada objeto de ```Aluno``` de
 
   ```python
   class Aluno:
-    QUANTIDADE_ALUNOS = 0
+      QUANTIDADE_ALUNOS = 0
     
-    def __init__(self, nome: str, idade: int, curso: str, semestre: int, disciplinas: list[Disciplina]):
-        self.nome = nome
-        self.idade = idade
-        self.curso = curso
-        self.semestre = semestre
-        self.disciplinas = disciplinas
-        Aluno.QUANTIDADE_ALUNOS += 1
-        self.id = Aluno.QUANTIDADE_ALUNOS
+      def __init__(self, nome: str, idade: int, curso: str, semestre: int, disciplinas: list[Disciplina]):
+          self.nome = nome
+          self.idade = idade
+          self.curso = curso
+          self.semestre = semestre
+          self.disciplinas = disciplinas
+          Aluno.QUANTIDADE_ALUNOS += 1
+          self.id = Aluno.QUANTIDADE_ALUNOS
     
-    def passar_de_semestre(self, novas_disciplinas: list[Disciplina]):
-        self.semestre += 1
-        self.disciplinas = novas_disciplinas
+      def passar_de_semestre(self, novas_disciplinas: list[Disciplina]):
+          self.semestre += 1
+          self.disciplinas = novas_disciplinas
     
-    def exibir_disciplinas(self):
-        saida = ""
-        for i, disciplina in enumerate(self.disciplinas):
-            saida += disciplina.nome
-            if i != len(self.disciplinas) - 1:
-                saida += " | "
+      def exibir_disciplinas(self):
+          saida = ""
+          for i, disciplina in enumerate(self.disciplinas):
+              saida += disciplina.nome
+              if i != len(self.disciplinas) - 1:
+                  saida += " | "
     
-        return saida
+          return saida
                 
-    def __str__(self):
-        str = f"Aluno {self.id}: \n"
+      def __str__(self):
+          str = f"Aluno {self.id}: \n"
   
-        str += f"  Nome: {self.nome},\n"
-        str += f"  Idade: {self.idade},\n"
-        str += f"  Curso: {self.curso},\n"
-        str += f"  Semestre: {self.semestre},\n"
-        str += f"  Disciplinas: {self.exibir_disciplinas()}\n"
-        return str
+          str += f"  Nome: {self.nome},\n"
+          str += f"  Idade: {self.idade},\n"
+          str += f"  Curso: {self.curso},\n"
+          str += f"  Semestre: {self.semestre},\n"
+          str += f"  Disciplinas: {self.exibir_disciplinas()}\n"
+          return str
 
   ```
 
