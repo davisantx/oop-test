@@ -8,6 +8,7 @@ status: write
 
 *ADS, IFCE CAMPUS ITAPIPOCA - 2026.2*
 
+*Escrito por @davisantx*
 
 ## Porquê desse paradigma?
 
